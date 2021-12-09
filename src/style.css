@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    color: white;
+}
+#content {
+    background-image: url('./sushHomepage.jpeg');
+    height: 90%;
+    width: 100vw;
+}
