@@ -1,9 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: black;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    height: 98%;
+    background-position: center;
     color: white;
 }
-#content {
-    background-image: url('./sushHomepage.jpeg');
-    height: 90%;
-    width: 100vw;
+
+h1 {
+    color: f48c06;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+button {
+    border: none;
+    font-size: 44px;
+    background-color: transparent;
+    outline: none;
+    color: f48c06;
+    margin-left: 10px;
+    
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.9);
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: f48c06;
 }
