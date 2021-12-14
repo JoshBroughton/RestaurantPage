@@ -38,7 +38,7 @@ button {
     font-size: 44px;
     background-color: transparent;
     outline: none;
-    color: f48c06;
+    color: whitesmoke;
     margin-left: 10px;
     
 }
@@ -64,4 +64,17 @@ a:link {
 }
 a:visited {
     color: f48c06;
+}
+#content {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#mainContent {
+    justify-self: center;
+    align-self: center;
+    font-size: 44px;
 }
