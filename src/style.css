@@ -1,3 +1,4 @@
+/*how to get pag to resize properly when shrunk down very small?*/
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +31,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     height: 20%;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.95);
 }
 
 button {
@@ -39,7 +40,7 @@ button {
     background-color: transparent;
     outline: none;
     color: whitesmoke;
-    margin-left: 10px;
+    margin-left: 30px;
     
 }
 
@@ -66,15 +67,21 @@ a:visited {
     color: f48c06;
 }
 #content {
-    display: flex;
+    display: grid;
     height: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*margin-right: 750px;
+    margin-left: 200px;*/
 
 }
 #mainContent {
     justify-self: center;
     align-self: center;
     font-size: 44px;
+    color: whitesmoke;
+    padding: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }

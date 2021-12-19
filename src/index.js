@@ -3,6 +3,7 @@ import anImage from './background.jpg';
 import './style.css';
 
 let loadHome = () => {
+    contentWipe();
     let content = document.getElementById("content");
     content.appendChild(homepage());   
 }
@@ -12,5 +13,10 @@ let contentWipe = () => {
         content.removeChild(content.lastChild);
     }
 }
+let homeButton = () => {
+    document.getElementById("home").addEventListener("click", loadHome);
+    
+}
 
+homeButton();
 loadHome();
