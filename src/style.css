@@ -3,22 +3,38 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     height: 100%;
+}
+@media (max-width: 1400px) {
+    html {
+    font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+    font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+    font-size: 8px;
+    }
 }
 
 body {
     background-image: url('./background.jpg');
     background-size: cover;
-    height: 98%;
+    max-height: 98%;
     background-position: center;
     color: white;
 }
 
 h1 {
     color: f48c06;
-    font-size: 100px;
+    font-size: 5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -30,17 +46,19 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20%;
+    min-height: 20%;
     background-color: rgba(0,0,0,0.95);
 }
 
 button {
     border: none;
-    font-size: 44px;
+    font-size: 3.5rem;
     background-color: transparent;
     outline: none;
     color: whitesmoke;
     margin-left: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
     
 }
 
@@ -58,6 +76,7 @@ button:hover {
     text-align: center;
     font-size: 16px;
     background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
 }
 
 a:link {
@@ -72,16 +91,16 @@ a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*margin-right: 750px;
-    margin-left: 200px;*/
+    overflow: hidden;
 
 }
 #mainContent {
     justify-self: center;
     align-self: center;
-    font-size: 44px;
+    font-size: 3rem;
     color: whitesmoke;
     padding: 25px;
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden;
 }

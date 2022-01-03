@@ -12,7 +12,8 @@ let loadHome = () => {
 let loadMenu = () => {
     contentWipe();
     let content = document.getElementById("content");
-    content.appendChild(menu());
+    let items = menu();
+    items.forEach(element => content.appendChild(element));
 }
 let loadContact = () => {
     contentWipe();
@@ -35,6 +36,7 @@ let menuButton = () => {
 let contactButton = () => {
     document.getElementById("contact").addEventListener("click", loadContact);
 }
+
 
 loadHome();
 homeButton();
