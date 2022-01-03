@@ -6,8 +6,11 @@ import './style.css';
 
 let loadHome = () => {
     contentWipe();
-    let content = document.getElementById("content");
-    content.appendChild(homepage());   
+    content = document.getElementById("content");
+    
+    content.appendChild(homepage());
+    
+    
 }
 let loadMenu = () => {
     contentWipe();
