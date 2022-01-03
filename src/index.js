@@ -12,8 +12,11 @@ let loadHome = () => {
 let loadMenu = () => {
     contentWipe();
     let content = document.getElementById("content");
+    let wrapper = document.createElement("div");
+    wrapper.id = "menuWrapper";
     let items = menu();
-    items.forEach(element => content.appendChild(element));
+    items.forEach(element => wrapper.appendChild(element));
+    content.appendChild(wrapper);
 }
 let loadContact = () => {
     contentWipe();
