@@ -4,6 +4,7 @@ let menu = () => {
 
     for (let i=0;i<numberOfIteams;i++) {
         divArray[i] = document.createElement("P");
+        divArray[i].id = "menuItems"
     }
     
 

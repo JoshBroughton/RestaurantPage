@@ -7,10 +7,8 @@ import './style.css';
 let loadHome = () => {
     contentWipe();
     content = document.getElementById("content");
-    
-    content.appendChild(homepage());
-    
-    
+    let items = homepage();
+    items.forEach(element => content.appendChild(element));
 }
 let loadMenu = () => {
     contentWipe();

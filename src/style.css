@@ -5,10 +5,18 @@
 }
 html {
     height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-@media (max-width: 1400px) {
+
+@media (max-width: 2561px) {
     html {
-    font-size: 12px;
+    font-size: 20px;
+    }
+}
+
+@media (max-width: 1920px) {
+    html {
+    font-size: 16px;
     }
 }
 
@@ -20,7 +28,7 @@ html {
 
 @media (max-width: 450px) {
     html {
-    font-size: 8px;
+    font-size: 6px;
     }
 }
 
@@ -35,7 +43,7 @@ body {
 h1 {
     color: f48c06;
     font-size: 5rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
     margin-top: 15px;
     margin-bottom: 25px;
 }
@@ -74,7 +82,7 @@ button:hover {
     width: 100%;
     color: white;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: rgba(0,0,0,0.9);
     overflow: hidden;
 }
@@ -87,28 +95,46 @@ a:visited {
 }
 #content {
     display: grid;
-    height: 70%;
+    height: 73%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 #mainContent {
+    position: absolute;
+    top: 6rem;
     justify-self: center;
-    align-self: center;
     font-size: 3rem;
-    color: whitesmoke;
-    padding: 25px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    color: black;
+    padding: 15px;
     overflow: hidden;
+    background-color: #c9c9c9ea;
+    border-radius: 12px;
+}
+#hours {
+    font-size: 2rem;
+    color: black;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #c9c9c9ea;
+    border-radius: 12px;
 }
 #menuWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #fffff2;
+    background-color: #c9c9c9ea;
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 12px;
     padding: 20px;
+    border: 5px solid black;
+    column-gap: 3rem;
+}
+#menuItems {
+    border: 5px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 12px;
 }
