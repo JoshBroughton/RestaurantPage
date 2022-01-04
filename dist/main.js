@@ -126,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet contact = () => {\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);\n\n//# sourceURL=webpack://restaurantpage/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet contact = () => {\n    let map = document.createElement(\"iframe\");\n    map.id = \"map\";\n    map.width = \"750\";\n    map.height = \"500\";\n    map.frameBorder = \"0\";\n    map.style = \"border:0\";\n    map.src = \"https://www.google.com/maps/embed/v1/place?key=AIzaSyCZq6nVxBEyLTj5Wuh5OPTyWQ-raOVWV7A&\"+\n    \"q=Calgary+Tower,Calgary+Canada\";\n    return map;\n}\n//TODO: Dynamic resizing of map\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);\n\n//# sourceURL=webpack://restaurantpage/./src/contact.js?");
 
 /***/ }),
 
