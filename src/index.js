@@ -22,7 +22,8 @@ let loadMenu = () => {
 let loadContact = () => {
     contentWipe();
     let content = document.getElementById("content");
-    content.appendChild(contact());
+    let items = contact();
+    items.forEach(element => content.appendChild(element));
 }
 let contentWipe = () => {
     let content = document.getElementById("content");
