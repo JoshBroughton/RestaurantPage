@@ -5,8 +5,12 @@
 }
 
 html {
-    height: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: url('./background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover;
 }
 
 @media (max-width: 2561px) {
@@ -34,10 +38,7 @@ html {
 }
 
 body {
-    background-image: url('./background.jpg');
-    background-size: cover;
     max-height: 98%;
-    background-position: center;
     color: white;
 }
 
@@ -102,6 +103,7 @@ a:visited {
     justify-content: center;
     overflow: hidden;
     position: relative;
+    background-color: transparent;
 }
 #mainContent {
     position: absolute;
