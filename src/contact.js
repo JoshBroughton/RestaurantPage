@@ -1,3 +1,4 @@
+let API_KEY = config.API_KEY;
 let contact = () => {
     let message = document.createElement("p");
     message.innerHTML = "Come join us in the in arctic cold heart of Calgary, Alberta!";
@@ -9,8 +10,8 @@ let contact = () => {
     map.height = "500";
     map.frameBorder = "0";
     map.style = "border:0";
-    map.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyDZw24att9FHFo7w_s0LmD4fCEVtr7YiBk&"+
-    "q=Calgary+Tower,Calgary+Canada";
+    map.src = "https://www.google.com/maps/embed/v1/place?key=" + API_KEY +
+    "&q=Calgary+Tower,Calgary+Canada";
 
     let divArray = [];
     divArray[0] = message;
