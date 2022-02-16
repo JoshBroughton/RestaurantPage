@@ -19,4 +19,5 @@ let contact = () => {
     return divArray;
 }
 //TODO: Dynamic resizing of map
+//change to push
 export default contact;
